@@ -1,0 +1,81 @@
+<div class="team-selection-container">
+  <header class="header">
+    <div class="logo">
+      <span class="logo-text">H</span>
+      <span class="logo-square"></span>
+    </div>
+    <h1 class="header-title">Team Selection</h1>
+  </header>
+
+  <app-team-stats [stats]="teamStats()"></app-team-stats>
+
+  <div class="main-content">
+    <div class="available-players-section">
+      <h2 class="main-content-title">Available Players</h2>
+
+      <table class="players-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (player of availablePlayers(); track player.name) {
+            <app-player-card 
+              [player]="player" 
+              [isSelected]="isPlayerSelected(player)" 
+              [listType]="'available'"
+              (onSelect)="selectPlayer(player)" 
+              (onShowDetails)="showPlayerDetails(player)">
+            </app-player-card>
+          } @empty {
+            <tr>
+              <td colspan="3" class="empty-message">No available players</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <div class="selected-players-section">
+      <h2 class="main-content-title">Selected Players</h2>
+
+      <table class="players-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (player of selectedPlayers(); track player.name) {
+            <app-player-card 
+              [player]="player" 
+              [listType]="'selected'"
+              (onRemove)="removePlayer(player)" 
+              (onShowDetails)="showPlayerDetails(player)">
+            </app-player-card>
+          } @empty {
+            <tr>
+              <td colspan="3" class="empty-message">No selected players yet</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  @if (selectedPlayer()) {
+    <div class="player-details-overlay" (click)="closePlayerDetails()">
+      <app-player-details
+        [player]="selectedPlayer()!" 
+        [isSelected]="isPlayerSelected(selectedPlayer()!)"
+        (onClose)="closePlayerDetails()"
+        (onSelect)="selectPlayer(selectedPlayer()!)">
+      </app-player-details>
+    </div>
+  }
+</div> 

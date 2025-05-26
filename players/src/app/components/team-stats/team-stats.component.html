@@ -1,0 +1,25 @@
+<div class="team-stats">
+  <h3 class="team-stats-title">Team Statistics</h3>
+  <div class="stats-container">
+    <div class="stat-item">
+      <span class="stat-label">Total Players:</span>
+      <span class="stat-value" [class.full]="stats().teamFull">{{stats().totalPlayers}}/11</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Batsmen:</span>
+      <span class="stat-value" [class.full]="stats().batsmenCount >= 6">{{stats().batsmenCount}}/6</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Bowlers:</span>
+      <span class="stat-value" [class.full]="stats().bowlersCount >= 6">{{stats().bowlersCount}}/6</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Wicket Keeper:</span>
+      <span class="stat-value" [class.full]="stats().wicketKeepersCount >= 1">{{stats().wicketKeepersCount}}/1</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">All-Rounders:</span>
+      <span class="stat-value" [class.full]="stats().allRoundersCount >= 4">{{stats().allRoundersCount}}/4</span>
+    </div>
+  </div>
+</div> 

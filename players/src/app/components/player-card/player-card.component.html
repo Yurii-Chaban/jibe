@@ -1,0 +1,36 @@
+<tr 
+  [attr.data-testid]="listType() + '-' + firstName() + '-' + lastName() + '-row'"
+  class="player-card-row"
+  (click)="showDetails()"
+  >
+  <td
+  [attr.data-testid]="listType() + '-' + firstName() + '-' + lastName() + '-name'"
+  class="player-card-cell"
+  >
+    {{player().name}}
+  </td>
+  <td
+  [attr.data-testid]="listType() + '-' + firstName() + '-' + lastName() + '-type'"
+  class="player-card-cell"
+  >
+    {{player().type}}
+  </td>
+  <td
+  class="player-card-cell"
+  >
+    @if (listType() === 'available') {
+      <button class="select-btn" 
+              [attr.data-testid]="'available-' + firstName() + '-' + lastName() + '-select'"
+              (click)="selectPlayer($event)"
+              [disabled]="isSelected()">
+        Select
+      </button>
+    } @else {
+      <button class="remove-btn" 
+              [attr.data-testid]="'selected-' + firstName() + '-' + lastName() + '-remove'"
+              (click)="removePlayer($event)">
+        Remove
+      </button>
+    }
+  </td>
+</tr> 

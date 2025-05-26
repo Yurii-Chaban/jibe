@@ -1,0 +1,60 @@
+.player-details-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.player-details-title {
+  margin-top: 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.player-detail {
+  margin-bottom: 10px;
+}
+
+.player-detail .label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.player-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.select-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.select-btn:hover:not([disabled]) {
+  background-color: #45a049;
+}
+
+.select-btn[disabled] {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.close-btn {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #ccc;
+} 

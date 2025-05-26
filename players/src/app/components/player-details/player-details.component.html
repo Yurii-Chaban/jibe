@@ -1,0 +1,42 @@
+<div class="player-details-card" 
+    [attr.data-testid]="'player-' + firstName() + '-' + lastName() + '-details'"
+    (click)="$event.stopPropagation()">
+  <h2 class="player-details-title">Player Details</h2>
+  
+  <div class="player-detail">
+    <span class="label">Name:</span>
+    <span>{{player().name}}</span>
+  </div>
+  <div class="player-detail">
+    <span class="label">Role:</span>
+    <span>{{player().type}}</span>
+  </div>
+  <div class="player-detail" 
+       [attr.data-testid]="'player-detail-' + firstName() + '-' + lastName() + '-batting'">
+    <span class="label">Batting Skill:</span>
+    <span>{{player().battingSkill}}</span>
+  </div>
+  <div class="player-detail"
+       [attr.data-testid]="'player-detail-' + firstName() + '-' + lastName() + '-bowling'">
+    <span class="label">Bowling Skill:</span>
+    <span>{{player().bowlingSkill}}</span>
+  </div>
+  <div class="player-detail"
+       [attr.data-testid]="'player-detail-' + firstName() + '-' + lastName() + '-fielding'">
+    <span class="label">Fielding Skill:</span>
+    <span>{{player().fieldingSkill}}</span>
+  </div>
+  <div class="player-actions">
+    <button class="select-btn" 
+            [attr.data-testid]="'player-detail-' + firstName() + '-' + lastName() + '-add'"
+            (click)="selectPlayer($event)"
+            [disabled]="isSelected()">
+      Select
+    </button>
+    <button class="close-btn" 
+            [attr.data-testid]="'player-detail-' + firstName() + '-' + lastName() + '-close'"
+            (click)="closeDetails($event)">
+      Close
+    </button>
+  </div>
+</div> 

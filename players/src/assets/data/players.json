@@ -1,0 +1,144 @@
+{
+  "players": [
+    {
+      "name": "Alex Morgan",
+      "type": "Batsman",
+      "battingSkill": 90,
+      "bowlingSkill": 90,
+      "fieldingSkill": 90
+    },
+    {
+      "name": "Sam Taylor",
+      "type": "Batsman",
+      "battingSkill": 85,
+      "bowlingSkill": 60,
+      "fieldingSkill": 75
+    },
+    {
+      "name": "Taylor Jordan",
+      "type": "Batsman",
+      "battingSkill": 88,
+      "bowlingSkill": 50,
+      "fieldingSkill": 80
+    },
+    {
+      "name": "Jordan Casey",
+      "type": "Batsman",
+      "battingSkill": 92,
+      "bowlingSkill": 45,
+      "fieldingSkill": 70
+    },
+    {
+      "name": "Casey Morgan",
+      "type": "Batsman",
+      "battingSkill": 87,
+      "bowlingSkill": 55,
+      "fieldingSkill": 78
+    },
+    {
+      "name": "Morgan Riley",
+      "type": "Batsman",
+      "battingSkill": 82,
+      "bowlingSkill": 65,
+      "fieldingSkill": 85
+    },
+    {
+      "name": "Riley Quinn",
+      "type": "Batsman",
+      "battingSkill": 86,
+      "bowlingSkill": 40,
+      "fieldingSkill": 83
+    },
+    {
+      "name": "Quinn Avery",
+      "type": "Batsman",
+      "battingSkill": 89,
+      "bowlingSkill": 30,
+      "fieldingSkill": 88
+    },
+    {
+      "name": "Avery Peyton",
+      "type": "WicketKeeper",
+      "battingSkill": 75,
+      "bowlingSkill": 20,
+      "fieldingSkill": 95
+    },
+    {
+      "name": "Peyton Skyler",
+      "type": "WicketKeeper",
+      "battingSkill": 73,
+      "bowlingSkill": 15,
+      "fieldingSkill": 93
+    },
+    {
+      "name": "Skyler Dakota",
+      "type": "WicketKeeper",
+      "battingSkill": 78,
+      "bowlingSkill": 10,
+      "fieldingSkill": 94
+    },
+    {
+      "name": "Dakota Reese",
+      "type": "AllRounder",
+      "battingSkill": 80,
+      "bowlingSkill": 80,
+      "fieldingSkill": 80
+    },
+    {
+      "name": "Reese Harper",
+      "type": "AllRounder",
+      "battingSkill": 78,
+      "bowlingSkill": 79,
+      "fieldingSkill": 76
+    },
+    {
+      "name": "Harper Bailey",
+      "type": "AllRounder",
+      "battingSkill": 82,
+      "bowlingSkill": 81,
+      "fieldingSkill": 77
+    },
+    {
+      "name": "Bailey Cameron",
+      "type": "AllRounder",
+      "battingSkill": 79,
+      "bowlingSkill": 83,
+      "fieldingSkill": 78
+    },
+    {
+      "name": "Cameron Finley",
+      "type": "AllRounder",
+      "battingSkill": 77,
+      "bowlingSkill": 85,
+      "fieldingSkill": 75
+    },
+    {
+      "name": "Finley Sawyer",
+      "type": "Bowler",
+      "battingSkill": 40,
+      "bowlingSkill": 92,
+      "fieldingSkill": 70
+    },
+    {
+      "name": "Sawyer Ellis",
+      "type": "Bowler",
+      "battingSkill": 35,
+      "bowlingSkill": 94,
+      "fieldingSkill": 65
+    },
+    {
+      "name": "Ellis Parker",
+      "type": "Bowler",
+      "battingSkill": 30,
+      "bowlingSkill": 95,
+      "fieldingSkill": 72
+    },
+    {
+      "name": "Parker Blake",
+      "type": "Bowler",
+      "battingSkill": 25,
+      "bowlingSkill": 93,
+      "fieldingSkill": 68
+    }
+  ]
+} 
